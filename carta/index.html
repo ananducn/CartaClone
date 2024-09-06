@@ -6,6 +6,11 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="src/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="me.js"></script>
+
   <title>Vite App</title>
 </head>
 
@@ -13,9 +18,30 @@
 
   <!-- Container div -->
   <div class="min-h-screen ">
+    <header class="bg-[#294acf] w-[100vw] text-white">
+      <nav class="flex items-center justify-between px-10 h-10">
+        <div
+          class="  dropdown-menu absolute -top-full left-0 bg-[#294acf] w-full flex flex-col gap-4 items-center py-2 text-lg font-bold">
+          <ul class="flex flex-col gap-3 items-center">
+            <li class="hover:text-slate-700">Home</li>
+            <li class="hover:text-slate-700">About Us</li>
+            <li class="hover:text-slate-700">Contact</li>
+            <li class="hover:text-slate-700">Blog</li>
+          </ul>
+          <div class="flex flex-col gap-3 items-center">
+            <button class="hover:text-slate-700">Login</button>
+            <button class="bg-slate-700 px-3 py-1 rounded-lg mb-4">Sign Up</button>
+          </div>
+        </div>
+        <div class="toggle-button">
+          <i class="fa-solid fa-bars fa-lg" style="color: white;"></i>
+        </div>
+      </nav>
+    </header>
     <main class="flex flex-col gap-8 justify-center text-center mt-12 px-3 sm:px-10 lg:px-14">
 
-      <img class="max-w-sm mx-auto"
+      <!-- logo and intro -->
+      <img class="w-screen mx-auto sm:max-w-sm "
         src="https://www.free-css.com/assets/files/free-css-templates/preview/page287/carta/assets/img/logo.svg" alt="">
       <h1 class="font-serif text-4xl font-semibold sm:text-7xl ">A new take on colabrative docs.</h1>
       <span class="flex justify-center gap-x-1">
@@ -52,25 +78,69 @@
 
           </section>
         </div>
-        <div class=" mt-36">
+
+        <!-- first section -->
+        <div class=" mt-36 sm:mt-20 px-2 flex flex-col items-center sm:flex-row sm:gap-20 md:px-6 lg:px-20 md:mt-40">
+
           <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page287/carta/assets/img/data.svg"
-            alt="">
-          <div class="flex flex-col gap-y-6 mt-14 justify-start"> 
-            <h1>Usage Data</h1>
-            <p>Quis istud possit, inquit, negare? Videamus animi partes, quarum est conspectus illustrior; Illa sunt
+            alt="" class="max-w-xs sm:w-52 md:w-[100%] md:ml-10 
+                sm:order-2 ">
+
+          <div class="flex flex-col gap-y-6 mt-14 text-left sm:order-1 md:w-[50%]">
+            <h1 class="font-bold text-2xl">Usage Data</h1>
+            <p class="text-slate-700 -mt-3">Quis istud possit, inquit, negare? Videamus animi partes, quarum est
+              conspectus illustrior; Illa sunt
               similia: hebes acies est cuipiam oculorum, corpore alius senescit; Non enim, si omnia non sequebatur.</p>
-            <hr>
-            <p>Quae quo sunt excelsiores, eo dant clariora indicia naturae. Causa autem fuit huc veniendi ut quosdam
+            <hr class="border-gray-400 border-1 mt-2">
+            <p class="text-slate-700 mt-2">Quae quo sunt excelsiores, eo dant clariora indicia naturae. Causa autem fuit
+              huc veniendi ut quosdam
               hinc.</p>
-            <h1>Carry Andersen, COO at Stripe</h1>
+            <h1 class="font-bold mb-10">Carry Andersen, COO at Stripe</h1>
           </div>
         </div>
+
+        <!-- second section -->
+        <div class="text-left flex flex-col sm:flex-row mt-8 sm:px-12 mx-3 items-center sm:gap-x-6 md:gap-x-16">
+          <img
+            src="https://www.free-css.com/assets/files/free-css-templates/preview/page287/carta/assets/img/security.svg"
+            alt="" class="w-[260px] sm:w-[300px] md:w-[430px]">
+          <div class="flex flex-col gap-y-8">
+            <h1 class="font-bold text-2xl mt-6">Absolute security</h1>
+            <p class="text-slate-700 -mt-3">Itaque his sapiens semper vacabit. Qualis ista philosophia est, quae non
+              interitum afferat pravitatis,
+              sed sit contenta mediocritate vitiorum? Quid de Platone aut de Democrito loquar? Quis istud possit,
+              inquit negare?</p>
+            <hr class="border-gray-400 border-1 ">
+            <p class="text-slate-700 -mt-3">Estne, quaeso, inquam, sitienti in bibendo voluptas? Duo Reges:
+              constructio interrete.</p>
+            <h1 class="font-bold -mt-4">Josh Blenton, Product Manager at Blinkist</h1>
+          </div>
+        </div>
+
+        <!-- third section  -->
+        <div class="mt-14 sm:mt-20 flex flex-col gap-8 sm:mx-16">
+          <p class="text-slate-700 text-sm sm:text-2xl font-extralight">Mentioned in</p>
+          <img class=""
+            src="https://www.free-css.com/assets/files/free-css-templates/preview/page287/carta/assets/img/mentioned.svg"
+            alt="">
+        </div>
+      </div>
     </main>
 
-
-
+    <!-- 4th bottom area -->
+    <div class="bg-[#272c3b] w-screen text-white mt-16 flex flex-col items-center text-center gap-6 px-2">
+      <img class="w-28 mt-14"
+        src="https://www.free-css.com/assets/files/free-css-templates/preview/page287/carta/assets/img/text.svg" alt="">
+      <h1 class="font-bold sm:text-3xl">We'll text you the app</h1>
+      <p class="font-light">Just insert your number below. Messaging rates apply.</p>
+      <div class="flex flex-col gap-2 sm:flex-row">
+        <input type="number" placeholder="Phone Number"
+          class=" rounded-md px-5 py-2 font-light text-black sm:h-12 sm:w-72">
+        <button class="bg-[#69f0af] text-black rounded-2xl w-72 py-2 mb-24 sm:w-32 sm:h-12 font-bold">Send</button>
+      </div>
+    </div>
   </div>
-  <script type="module" src="/main.js"></script>
+
 </body>
 
 </html>
